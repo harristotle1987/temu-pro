@@ -9,6 +9,7 @@ import { Eye, EyeOff, Mail, Lock } from 'lucide-react'
 export default function SignInPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
 
   return (
     <div className="min-h-screen flex">
