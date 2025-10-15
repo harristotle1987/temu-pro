@@ -63,7 +63,7 @@ jobs:
         run: npx prisma generate
 
       - name: Seed test user
-        run: npx ts-node prisma/seed-test-user.ts
+        run: node prisma/seed-test-user.cjs
 
       - name: Build app
         run: npm run build
